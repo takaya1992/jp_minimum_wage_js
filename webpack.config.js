@@ -4,7 +4,9 @@ module.exports = {
   },
   output: {
     path: __dirname,
-    filename: '[name].js'
+    filename: '[name].js',
+    library: 'JpMinimumWage',
+    libraryTarget: 'umd'
   },
   module: {
     loaders: [
@@ -12,9 +14,8 @@ module.exports = {
         test: /\.js$/, 
         exclude: /node_modules/, 
         loader: 'babel-loader', 
-        query:{
-          presets: ['es2015'],
-          plugins: ['transform-es2015-modules-umd']
+        query: {
+          presets: ['es2015']
         }
       }
     ],

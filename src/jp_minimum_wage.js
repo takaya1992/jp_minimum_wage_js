@@ -53,5 +53,4 @@ class JpMinimumWage {
   }
 }
 
-export default JpMinimumWage;
-window.JpMinimumWage = JpMinimumWage;
+module.exports = JpMinimumWage;
