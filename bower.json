@@ -1,0 +1,12 @@
+{
+  "name": "jp_minimum_wage_js",
+  "version": "0.0.1",
+  "main": "jp_minimum_wage.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src",
+    "test",
+    "package.json"
+  ]
+}
