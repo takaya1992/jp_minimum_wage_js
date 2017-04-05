@@ -1,3 +1,5 @@
+const webpack = require("webpack");
+
 module.exports = {
   entry: {
     'jp_minimum_wage': './src/jp_minimum_wage.js',
@@ -8,6 +10,9 @@ module.exports = {
     library: 'JpMinimumWage',
     libraryTarget: 'umd'
   },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({sourceMap: true})
+  ],
   module: {
     loaders: [
       { 

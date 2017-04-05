@@ -4,6 +4,7 @@
   "description": "get minimum wage in japan",
   "main": "jp_minimum_wage.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "takaya1992",
