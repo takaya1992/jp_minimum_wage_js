@@ -3,7 +3,7 @@ $(function () {
     var prefectureName = this.value;
     JpMinimumWage.findByName(prefectureName, function (data) {
       if (data) {
-        $('#minimumWageText').text(prefectureName + 'の最低賃金は、'  + data.wage + '円です。');
+        $('#minimumWageText').text(data.prefecture_name + 'の最低賃金は、'  + data.wage + '円です。');
       }
     });
   });
