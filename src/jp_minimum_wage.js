@@ -32,7 +32,7 @@ class JpMinimumWage {
   static findByName(name, callback) {
     let jpMinimumWage = new JpMinimumWage();
     jpMinimumWage.getData(data => {
-      const minimumWage = data.find(elm => elm.prefecture_name === name);
+      const minimumWage = data.minimum_wages.find(elm => elm.prefecture_name === name);
       callback(minimumWage);
     });
   }
@@ -40,7 +40,7 @@ class JpMinimumWage {
   static findByCode(code, callback) {
     let jpMinimumWage = new JpMinimumWage();
     jpMinimumWage.getData(data => {
-      const minimumWage = data.find(elm => elm.prefecture_code === code);
+      const minimumWage = data.minimum_wages.find(elm => elm.prefecture_code === code);
       callback(minimumWage);
     });
   }
@@ -48,7 +48,7 @@ class JpMinimumWage {
   static all(callback) {
     let jpMinimumWage = new JpMinimumWage();
     jpMinimumWage.getData(data => {
-      callback(data);
+      callback(data.minimum_wages);
     });
   }
 }
