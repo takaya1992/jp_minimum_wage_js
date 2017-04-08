@@ -1,6 +1,6 @@
 {
   "name": "jp_minimum_wage_js",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "jp_minimum_wage.js",
   "ignore": [
     "**/.*",
